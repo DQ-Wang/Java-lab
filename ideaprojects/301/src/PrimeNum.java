@@ -35,6 +35,47 @@ public class PrimeNum {
     }
 }
 
+// 定义学生基类
+class Student {
+    protected String id;
+    protected String name;
+    protected String className;
+
+    public Student(String id, String name, String className) {
+        this.id = id;
+        this.name = name;
+        this.className = className;
+    }
+
+    public void printInfo() {
+        System.out.println("学号: " + id + ", 姓名: " + name + ", 班级: " + className);
+    }
+}
+
+// 本科生类，继承自Student
+class Undergraduate extends Student {
+    public Undergraduate(String id, String name, String className) {
+        super(id, name, className);
+    }
+}
+
+// 研究生类，继承自Student，增加导师信息
+class Graduate extends Student {
+    private String advisor;
+
+    public Graduate(String id, String name, String className, String advisor) {
+        super(id, name, className);
+        this.advisor = advisor;
+    }
+
+    @Override
+    public void printInfo() {
+        super.printInfo();
+        System.out.println(", 导师: " + advisor);
+    }
+}
+
+
 
 
 
