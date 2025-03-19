@@ -1,7 +1,7 @@
 # Java-lab
 Java code collection
 
-402是自制Ratioanl类，实现了比较完整的功能
+1. 402是自制Ratioanl类，实现了比较完整的功能
 
 
 
@@ -9,3 +9,8 @@ Java code collection
 
 
 
+---
+
+### 3.19
+
+2. **mockexam**是java的模拟考题，实现车辆管理系统（信息录入，车辆检索，输出车辆所有信息）......利用多态......
